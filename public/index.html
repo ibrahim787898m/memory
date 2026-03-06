@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div id="loginScreen" class="card">
+      <h1>Memory</h1>
+      <p>A moment becomes a memory when two people hold onto it forever.</p>
+      <input id="username" type="text" placeholder="Username" />
+      <input id="password" type="password" placeholder="Password" />
+      <button id="loginBtn">Login</button>
+      <p id="loginError" class="error"></p>
+    </div>
+
+    <div id="chatScreen" class="chat hidden">
+      <div class="chat-header">
+        <div>
+          <h2>Memory</h2>
+          <p id="statusText" class="sub">Offline</p>
+        </div>
+        <button id="logoutBtn" class="small-btn">Logout</button>
+      </div>
+
+      <div id="messages" class="messages"></div>
+
+      <div class="chat-input">
+        <input id="messageInput" type="text" placeholder="Type a message..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>

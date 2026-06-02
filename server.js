@@ -12,7 +12,7 @@ const io = new Server(server);
 
 const PORT = process.env.PORT || 3000;
 
-const ALLOWED_USERS = ["ibrahim", "humaisui"];
+const ALLOWED_USERS = ["user1", "user2"];
 const CHAT_PASSWORD = process.env.CHAT_PASSWORD;
 
 const onlineUsers = new Set();

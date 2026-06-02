@@ -128,7 +128,7 @@ socket.on("newMessage", (message) => {
 });
 
 socket.on("statusUpdate", (onlineUsers) => {
-  const otherUser = currentUser === "ibrahim" ? "humaisui" : "ibrahim";
+  const otherUser = currentUser === "user1" ? "user2" : "user1";
   const isOtherOnline = onlineUsers.includes(otherUser);
 
   statusText.textContent = isOtherOnline
